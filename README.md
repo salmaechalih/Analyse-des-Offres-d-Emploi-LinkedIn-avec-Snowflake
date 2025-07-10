@@ -35,6 +35,7 @@ Les fichiers sont hébergés sur un bucket S3 public :
 
 5. Analyses Réalisées
   ### ✅ Top 10 des titres de postes les plus publiés par industrie
-  ![Texte alternatif](résultats%20obtenus/visualisation1.png)
+
+  ![Texte alternatif](résultats%20obtenus/Analyse1.png)
 
 
