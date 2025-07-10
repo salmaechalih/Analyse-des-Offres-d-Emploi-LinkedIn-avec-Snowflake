@@ -39,7 +39,7 @@ Les fichiers sont hébergés sur un bucket S3 public :
   ![Texte alternatif](résultats%20obtenus/analyse1.png)
   
  ### ✅ Top 10 des postes les mieux rémunérés par industrie
-  ![Texte alternatif](résultats%20obtenus/analyse2.png)
+  ![Texte alternatif](résultats%20obtenus/Analyse2.png)
 
   ###✅ Répartition des offres d’emploi par taille d’entreprise
    ![Texte alternatif](résultats%20obtenus/analyse3.png)
@@ -47,8 +47,8 @@ Les fichiers sont hébergés sur un bucket S3 public :
  ### ✅ Répartition par secteur d’activité
   ![Texte alternatif](résultats%20obtenus/analyse4.png)
 
-  ###✅ Répartition par type d’emploi (temps plein, partiel, stage)
-    ![Texte alternatif](résultats%20obtenus/analyse5.png)
+  ### ✅ Répartition par type d’emploi (temps plein, partiel, stage)
+  ![Texte alternatif](résultats%20obtenus/analyse5.png)
   
 
   
