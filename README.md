@@ -67,6 +67,18 @@ Les fichiers sont hébergés sur un bucket S3 public :
 ### ✅ Répartition par type d’emploi (temps plein, partiel, stage)
 ![Texte alternatif](résultats%20obtenus/visualisation5.png)
 
+7. Les problèmes rencontrés et les solutions apportées
+   
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+      Problème	                                                              Solution
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------
+❌ Difficulté à charger les fichiers JSON via COPY INTO	     Les fichiers JSON avaient des tableaux externes et parfois des valeurs 'null' ou des espaces                                                                parasites. La solution a été de définir un format JSON avancé
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+❌ Requêtes SQL dans Streamlit ne reconnaissent pas les       Les requêtes dans Streamlit doivent utiliser le nom complet : 
+tables	                                                      linkedin.linkedin_schema.nom_table, faute de quoi Snowflake ne trouve pas les tables
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+❌ Erreur dans le traitement de la colonne salaire_max	      La colonne contenait des valeurs non numériques ou manquantes. La solution :                                                                                df["salaire_max"] = pd.to_numeric(df["salaire_max"], errors="coerce")
+------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
   
