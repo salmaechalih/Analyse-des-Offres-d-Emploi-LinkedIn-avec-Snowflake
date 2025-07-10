@@ -41,7 +41,7 @@ Les fichiers sont hébergés sur un bucket S3 public :
  ### ✅ Top 10 des postes les mieux rémunérés par industrie
   ![Texte alternatif](résultats%20obtenus/Analyse2.png)
 
-  ###✅ Répartition des offres d’emploi par taille d’entreprise
+  ### ✅ Répartition des offres d’emploi par taille d’entreprise
    ![Texte alternatif](résultats%20obtenus/analyse3.png)
    
  ### ✅ Répartition par secteur d’activité
