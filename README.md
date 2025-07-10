@@ -53,8 +53,22 @@ Les fichiers sont hébergés sur un bucket S3 public :
  6. résultats obtenus (visualisation avec streamlit )
 
 ### ✅ Top 10 des titres de postes les plus publiés par industrie
+ ![Texte alternatif](résultats%20obtenus/visualisation1.png)
+ 
+### ✅ Top 10 des postes les mieux rémunérés par industrie
+![Texte alternatif](résultats%20obtenus/visualisation2.png)
 
-  ![Texte alternatif](résultats%20obtenus/visualisation1.png)
+### ✅ Répartition des offres d’emploi par taille d’entreprise
+![Texte alternatif](résultats%20obtenus/visualisation3.png)
+
+### ✅ Répartition par secteur d’activité
+![Texte alternatif](résultats%20obtenus/visualisation4.png)
+
+### ✅ Répartition par type d’emploi (temps plein, partiel, stage)
+![Texte alternatif](résultats%20obtenus/visualisation5.png)
+
+
+
   
   
 
