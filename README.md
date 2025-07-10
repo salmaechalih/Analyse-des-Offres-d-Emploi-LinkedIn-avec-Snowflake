@@ -70,7 +70,7 @@ Les fichiers sont hébergés sur un bucket S3 public :
 7. Les problèmes rencontrés et les solutions apportées
    
 
-      Problème	                                                              Solution
+      Problème	 /                                                             Solution
  -----------------------------------------------------------------------------------------------------------------------------------------------------------
 ❌ Difficulté à charger les fichiers JSON via COPY INTO	     Les fichiers JSON avaient des tableaux externes et parfois des valeurs 'null' ou des espaces                                                                parasites. La solution a été de définir un format JSON avancé
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
