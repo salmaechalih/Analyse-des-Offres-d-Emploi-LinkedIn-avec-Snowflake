@@ -34,8 +34,8 @@ Les fichiers sont hébergés sur un bucket S3 public :
 ### 5️⃣ Chargement des données
 
 5. Analyses Réalisées
+   
   ### ✅ Top 10 des titres de postes les plus publiés par industrie
-
   ![Texte alternatif](résultats%20obtenus/analyse1.png)
   
  ### ✅ Top 10 des postes les mieux rémunérés par industrie
@@ -49,6 +49,13 @@ Les fichiers sont hébergés sur un bucket S3 public :
 
   ### ✅ Répartition par type d’emploi (temps plein, partiel, stage)
   ![Texte alternatif](résultats%20obtenus/analyse5.png)
+
+ 6. résultats obtenus (visualisation avec streamlit )
+
+### ✅ Top 10 des titres de postes les plus publiés par industrie
+
+  ![Texte alternatif](résultats%20obtenus/visualisation1.png)
+  
   
 
   
