@@ -61,9 +61,8 @@ work_type varchar,
 currency VARCHAR,
 compensation_type VARCHAR
 );
-select title from job_postings;
---***verification des données***--
-select * from job_postings ;
+
+
 --***Importaion des données depuis le stage ***--
 COPY INTO job_postings
 FROM @linkedin_stage/job_postings.csv
