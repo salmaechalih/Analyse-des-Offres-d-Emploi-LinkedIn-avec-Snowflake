@@ -112,11 +112,11 @@ st.altair_chart(chart, use_container_width=True)
 # Analyse 4
 
 
-st.subheader("🏭 4.Répartition des offres par secteur d’activité")
+st.subheader("🏭 4. Répartition des offres par secteur d’activité")
 
 query = """
-SELECT 
-  ci.industry, 
+SELECT
+  ci.industry,
   COUNT(*) AS nb_jobs
 FROM linkedin.linkedin_schema.job_postings jp
 JOIN linkedin.linkedin_schema.company_industries_csv ci ON jp.company_id = ci.company_id
@@ -125,15 +125,28 @@ ORDER BY nb_jobs DESC;
 """
 df = session.sql(query).to_pandas()
 df.columns = [col.lower() for col in df.columns]
-df.columns = [col.lower() for col in df.columns]
-df.rename(columns={"secteur": "industry", "nb_jobs": "offres"}, inplace=True)
+df.rename(columns={"nb_jobs": "offres"}, inplace=True)
 
+# Pourcentages
+df["pourcentage"] = df["offres"] / df["offres"].sum() * 100
 
-chart = alt.Chart(df).mark_arc(innerRadius=30, outerRadius=100).encode(
-    theta="offres:Q",
-    color="industry:N",
-    tooltip=["industry", "offres"]
+# Palette harmonieuse
+color_scale = alt.Scale(scheme='tableau20')
+
+# Camembert sans labels externes
+chart = alt.Chart(df).mark_arc(innerRadius=40, outerRadius=120).encode(
+    theta=alt.Theta("pourcentage:Q"),
+    color=alt.Color("industry:N", scale=color_scale, legend=alt.Legend(title="Secteur")),
+    tooltip=[
+        alt.Tooltip("industry:N", title="Secteur"),
+        alt.Tooltip("offres:Q", title="Nb Offres"),
+        alt.Tooltip("pourcentage:Q", format=".1f", title="Pourcentage")
+    ]
+).properties(
+    width=450,
+    height=450
 )
+
 st.altair_chart(chart, use_container_width=True)
 
 
